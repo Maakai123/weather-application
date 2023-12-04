@@ -1,0 +1,52 @@
+*{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+    overflow: hidden;
+}
+
+
+body{
+    font-family:"Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color:#555;  
+    
+    /* All the element that overflows the view port horizontally, will be hidden, so we
+    can easy navigate  between mobile and desktop 
+    
+    This only works if there is nothing absolutely positioned in relative to body*/
+    overflow-x: hidden;
+}
+
+
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #1864ab;
+height: 6rem;
+padding:0 4.8rem;
+}
+
+.main-nav-list{
+    list-style: none;
+    display:flex;
+    gap:4.8rem;
+    align-items:center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited{
+    display:inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    
+}
