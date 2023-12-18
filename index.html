@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <title>Weather-app &mdash; know your weather everyday</title>
 </head>
 <body>
@@ -14,8 +18,8 @@
 <header class="header">
  
     <div class="search-container">
-        <input id="search" type="text" placeholder="Search for location">
-        <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        <input id="search" type="text" class="input" placeholder="Search for location">
+        <button><ion-icon class="search-icon" name="search-outline"></ion-icon></button>
       </div>
     
  <nav class="main-nav">
@@ -25,7 +29,7 @@
         <li><a class="main-nav-link" href="#"></a></li>
         <li><a class="main-nav-link" href="#"></a></li>
         <div>
-            <select id="">
+            <select class ="select-id">
                 <option value="">(°C)</option>
                 <option value="">(°F)</option>
             </select>
@@ -33,14 +37,42 @@
     </ul>
  </nav>
 </header>
-    
 
+<section class="section-hero">
+    <div class="hero">
+        <div class="weather-div">
+            <h1 class="location-name"><span class="time"><h1></h1></span></h1>
+        
+            <h1 class="current-weather">Current Weather</h1>
+            <ul class="list">
+                <li class="list-item">
+                    <img src="img/SunnyDayV3.svg">
+                    <span class="span">Sunny 36<span>°C</span>
+                </li>
+
+                <li class="list-item">
+                   <h5>Mostly cloudly, <span>Feels like 32°</span></h5>
+                    
+                </li>
+            </ul>
+            <p>There will be mostly sunny skies. The high will be 33°.</p>
+        </div>
+
+        <div class="weather-div">
+        
+            <h1 class="current-weather">Location Map</h1>
+
+        
+        </div>
+        
+    </div>
 
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src=" https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 <script src="script.js"></script>
+
 
 </body>
 </html>

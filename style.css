@@ -15,12 +15,13 @@ body{
     line-height: 1;
     font-weight: 400;
     color:#555;  
+    overflow-x: scroll;
     
     /* All the element that overflows the view port horizontally, will be hidden, so we
     can easy navigate  between mobile and desktop 
     
     This only works if there is nothing absolutely positioned in relative to body*/
-    overflow-x: hidden;
+   
 }
 
 
@@ -49,4 +50,124 @@ padding:0 4.8rem;
     font-weight: 500;
     transition: all 0.3s;
     
+}
+
+.search-container{
+ padding: 5rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.search-icon{
+ font-size: 3rem;
+ color: #fff;
+ cursor: pointer;
+}
+
+button{
+border: none;
+margin-left: 1rem;
+padding: 0.5rem;
+border-radius: 10px;
+background:rgba(253, 242, 233, 0.2)
+
+}
+
+.input{
+width: 100%;
+padding: 1rem 10rem;
+font-size: 1.8rem;
+font-family: inherit;
+border: none;
+background-color: #fff;
+border-radius: 20px;
+}
+
+.input::placeholder{
+    color:#aaa;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+select{
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.select::placeholder{
+    color:#aaa;
+}
+
+select:focus{
+    outline: none;
+}
+
+.location-name{
+margin-bottom: 3rem;
+color:#fff;
+text-align: center;
+font-size: 2.5rem;
+}
+.section-hero{
+    background-color: #1864ab;
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+#map {
+    height:100%;
+}
+
+.hero{
+ max-width:120rem;
+ padding: 0 3.2rem;
+ margin: 0 auto;
+ display:grid;
+ grid-template-columns: 1fr 1fr;
+ gap:3rem;
+
+}
+
+.weather-div{
+ border-radius: 11px;
+ width: 100%;
+ border: 2px solid #aaa;
+ padding: 4.6rem;
+ color: #fff;
+ font-size: 2rem;
+
+}
+
+.list{
+    list-style:none;
+    display:flex;
+    gap:1rem;
+   margin-top: 3rem;
+   font-size: 5rem;
+}
+
+.list-item {
+    font-size:1.8rem;
+    display:flex;
+    align-items: center;
+    gap:2rem;
+    line-height: 1.2;
+    margin-bottom: 9.8rem;
+
+}
+
+.span{
+    font-size: 4rem;
+}
+
+.paragraph{
+ font-size: 1.6rem;
 }
